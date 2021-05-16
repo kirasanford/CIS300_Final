@@ -1,0 +1,456 @@
+@import url('https://fonts.googleapis.com/css2?family=Slabo+13px&family=Stint+Ultra+Expanded&family=Ultra&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body, html, main  {
+    height: 100%;
+	width: 100%;
+	margin: 0;
+}
+
+header {
+	width: 100%;
+	margin: 0;
+}
+
+nav{
+	background-color: #749950;
+	text-align: center;
+}	
+
+nav a {
+    color: #122710;
+	text-decoration: none;
+}
+
+nav ul{
+	list-style-type: none;
+	margin: 0;
+	padding-left: 0;
+	font-size: 1.2em;
+}
+
+nav li{
+	border-bottom: 1px solid #000033;
+}
+
+nav a:link {
+	color: #5C7FA3;
+}
+
+nav a:hover, nav a.active {
+	color: #A52A2A;
+}
+
+body {
+	font-family: 'Slabo 13px', serif;
+	background-color: #BCCD93;
+	text-align: center;
+    overflow-x: hidden;
+}
+
+a:link, a:visited {
+	color: #000000;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #A52A2A;
+}
+
+footer {
+	background-color: #749950;
+}
+
+.footerLeft {
+	float: left;
+	text-align: left;
+	width: 50%;
+	padding: 20px;
+}
+
+.footerRight:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.logo {
+	height: 5%;
+	width: 5%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0;
+}
+
+h1 {
+	font-family: 'Ultra', serif;
+	margin-top: -5px;
+	margin-bottom: 3px;
+}
+
+h2 {
+	font-family: 'Stint Ultra Expanded', cursive;
+}
+
+.btn {
+	background:linear-gradient(to bottom, #535829 0%, #C1C877 100%);
+	border-radius:13px;
+	cursor:pointer;
+	color:#FFFFFF;
+	font-family: 'Slabo 13px', serif;
+	padding:11px 36px;
+	text-decoration:none;
+}
+
+.btn:hover {
+	background:linear-gradient(to bottom, #C1C877 0%, #535829 100%);
+}
+
+/* Header background */
+.landingPage {
+	background-image: url("images/courseFountain.gif");
+	height: 85%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.clubhouseLanding {
+	background-image: url("images/sandwich.jpg");
+	height: 40%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #FFFFFF;
+	font-size: 24px;
+}
+
+.courseLanding {
+	background-image: url("images/cartz.jpg");
+	height: 40%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #FFFFFF;
+	font-size: 24px;
+}
+
+.teeLanding {
+	background-image: url("images/teeBox.jpg");
+	height: 40%;
+	background-position: 50% 80%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #FFFFFF;
+	font-size: 24px;
+}
+
+.eventLanding {
+	background-image: url("images/events.jpg");
+	height: 40%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #FFFFFF;
+	font-size: 24px;
+}
+
+.memberLanding {
+	background-image: url("images/member.jpg");
+	height: 40%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #FFFFFF;
+	font-size: 24px;
+}
+
+#wrapper {
+	background-color: rgba(0, 0, 0, 0.6);
+	width: 100%;
+	height: 100%;
+}
+
+.description {
+	text-align: left;
+	position: absolute;
+	top: 73%;
+	left: 3%;
+	color: #FFFFFF;
+	padding-right: 45%;
+}
+
+.calendar {
+	text-align: center;
+	margin: 20px;
+	margin-bottom: -30px;
+}
+
+/* 2 columns */
+
+.twoThings {}
+
+.barLeft {}
+
+.barRight { left: 80%;}
+
+/* Member Ad home page */
+
+.img {
+	padding-top: 10px;
+	text-align: center;
+}
+
+.perks {
+    list-style: none;
+    padding-left: 0;
+}
+.perks li {
+    position: relative;
+    padding-left: 150px;
+	text-align: left;
+}
+.perks li:before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    background-image: url('images/golfBall.gif');
+    background-size: cover;
+    background-position: center;
+    left: 130px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.benefits {
+	margin-bottom: 50px;
+}
+
+/* Look at what we do */
+
+.aboutUs { 
+	background-image: url('images/sandy.jpg');
+	background-size: cover;
+    background-position: center;
+	padding: 50px;
+}
+
+/* Look at our activites */
+
+.aboutClubhouse { 
+	padding: 50px;
+}
+
+.photoGallery {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.photoColumn {
+  flex: 33.3%;
+  max-width: 33.3%;
+  padding: 0 4px;
+}
+
+.photoColumn img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.section {
+	width: 100%;
+	padding-bottom: 10px;
+	display: block;
+}
+
+.card {
+	background-color: #FFFFFF;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+}
+
+.container {
+	padding: 0 16px;
+}
+
+.container a {
+	color: #000000;
+	text-decoration: none;
+}
+
+.container a:hover {
+	color:#749950;
+}
+
+.container::after, .aboutUs::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+/* Social media imgs */
+.social {
+	background-image: url("images/moonMountain.jpg");
+	background-size: cover;
+    background-position: center;
+	padding: 20px;
+}
+
+.fa {
+	padding: 20px;
+	margin: 0px 10px;
+	font-size: 30px;
+	width: 50px;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 50%;
+}
+
+.fa:hover {opacity: 0.8;}
+
+.fa-facebook {background: #3B5998;}
+
+.fa-twitter {background: #55ACEE;}
+
+.fa-google {background: #dd4b39;}
+
+.fa-linkedin {background: #007bb5;}
+
+.fa-youtube {background: #bb0000;}
+
+.fa-instagram {background-image: linear-gradient(210deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040,#F77737,#FCAF45,#FFDC80);}
+
+/* Responsive Google Calendar */
+
+.responsiveCal { position: relative; padding-bottom: 75%; height: 0; overflow: hidden; }
+ 
+.responsiveCal iframe { position: absolute; top:0; left: 0; width: 90%; height: 100%; }
+
+/* Tee time Table */
+
+.greenFees {
+	border-collapse: collapse;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0;
+}
+
+.greenFees td, .greenFees th {
+	border: 1px solid #ddd;
+	padding: 8px;
+}
+
+.greenFees tr:nth-child(even){
+	background-color: #f2f2f2;
+}
+
+.greenFees th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	background-color: #5c6f42;
+	color: white;
+}
+
+/* Contact Form */
+
+.contactForm {
+	max-width:400px;
+	width:100%;
+	margin:0 auto;
+	position:relative;
+}
+
+fieldset {
+	border: none;
+	margin: 0 0 10px;
+	padding: 0;
+}
+
+#form input[type="text"], #form input[type="email"], #form input[type="tel"], #form textarea, #form input[type="number"], #form button[type="submit"] { 
+	font-family: 'Stint Ultra Expanded', cursive;
+}
+
+#form input[type="text"], #form input[type="email"], #form input[type="tel"], #form input[type="number"], #form textarea {
+	width: 100%;
+	border: 1px solid #CCC;
+	margin: 0 0 5px;
+	padding: 10px;
+}
+
+#form textarea {
+	height: 100px;
+	max-width: 100%;
+}
+
+#form button[type="submit"] {
+	cursor:pointer;
+	width: 100%;
+	background:#5c6f42;
+	color:#BCCD93;
+	margin:0 0 5px;
+	padding:10px;
+}
+
+#form button[type="submit"]:hover {
+	background:#122710;
+	transition:background-color 0.3s ease-in-out;
+}
+
+/* Resizing */
+
+@media only screen and (min-width: 600px) {
+	.responsiveCal {
+		position: relative; padding-bottom: 75%; height: 0; overflow: hidden; margin-bottom: -100px;
+	}
+	.responsiveCal iframe {
+		position: absolute; top:0; left: 3%; width: 90%; height: 90%;
+	}
+	.section {
+		float: left;
+		width: 33.3%;
+		padding: 0 10px;
+	}
+	.twoThings {
+		padding: 20px 75px;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.barLeft, .barRight {
+		flex: 50%;
+	}
+	.img {
+		width: 100%;
+		text-align: center;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	nav {
+		text-align: center;
+	}
+	nav ul{
+		display:flex;  
+		list-style:none;
+		padding: 10px;
+		list-style-type: none;
+		justify-content: space-around;
+	}
+	nav a.active {
+		background-color: #122710;
+		padding: 10px 20px;
+		color: #BCCD93;
+	}
+	nav li{
+		border-bottom: none;
+	}
+	#wrapper {
+		padding-top: 90px;
+	}
+}

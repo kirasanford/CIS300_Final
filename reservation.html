@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Contact Us</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="reservation tee time">
+
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="icon" href="favicon/favicon.ico">
+</head>
+
+<body>
+
+<header>
+	<img class="logo" src = "images/logo.png" alt = "logo"></img>
+	<h1>Denson Golf Course</h1>
+<header>
+
+<nav>
+	<ul>
+		<li> <a href="index.html">Home</a> </li>
+		<li> <a href="clubhouse.html">Clubhouse</a> </li>
+		<li> <a href="course.html">Course Information</a> </li>
+		<li> <a href="tee.html">Green fees</a> </li>
+		<li> <a href="events.html">Events</a> </li>
+		<li> <a href="member.html">Membership</a> </li>
+		<li> <a class="active" href="reservation.html">Reservation</a> </li>
+	</ul>
+</nav>
+
+<main>
+	<div class="landingPage">
+	<br> <h2>&nbsp;</h2>
+		
+	<h2>Reservation</h2>
+	<h3>We can't wait to see you!</h3>
+	
+	<br>
+	
+	<div class="contactForm">  
+	  <form id="form" action="#" method="post">
+		<fieldset> <input placeholder="Name" type="text" required="required"> </fieldset>
+		<fieldset> <input placeholder="Phone Number" type="tel" maxlength="12" required="required"> </fieldset>
+		<fieldset> <input placeholder="Email Address" type="email" required="required"> </fieldset>
+		<fieldset> <input placeholder="Golfers" type="number" min="1" max="6" required="required"> </fieldset>
+		<fieldset> <input placeholder="Golf Carts" type="number" min="1" max="2" required="required"> </fieldset>
+		<fieldset> <textarea placeholder="Comments" rows="2" cols="30" required="required"></textarea> </fieldset>
+		<button type="submit">Submit</button>
+	  </form>
+	  <p id="log" style="color:#FFF"></p>
+	</div>
+	
+	<h2>&nbsp;</h2> <br>
+	
+	</div>
+	
+	<footer>
+		<div class="footerRight">
+			<div class="footerLeft">
+				<p>Pro Shop Hours:</p>
+				</p>Monday - Thursday: 6AM - 6PM<br>
+				Friday: 6AM - 7PM <br>
+				Saturday: 6AM - 8PM <br>
+				Sunday & Holidays: 6AM - 7PM <br> </p>
+			</div>
+			<div class="footerLeft" style="	text-align: right;">
+				<p>Denson Golf Course <br>
+				125 Hwy 13 S <br>
+				Troy, SC 27371 <br>
+				(910) 555-1487 <br>
+				<a href="mailto: kasanfor@asu.edu">denson@golf.com</a>
+			</div>
+		</div>
+	</footer>
+</main>
+		
+<script>
+	function logSubmit(event) {
+	  log.textContent = `Form Submitted!`;
+	  event.preventDefault();
+	}
+
+	const form = document.getElementById('form');
+	const log = document.getElementById('log');
+	form.addEventListener('submit', logSubmit);
+</script>
+		
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Membership</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="explain membership perks">
+
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="icon" href="favicon/favicon.ico">
+</head>
+
+<body>
+
+<header>
+	<img class="logo" src = "images/logo.png" alt = "logo"></img>
+	<h1>Denson Golf Course</h1>
+</header>
+
+<nav>
+	<ul>
+		<li> <a href="index.html">Home</a> </li>
+		<li> <a href="clubhouse.html">Clubhouse</a> </li>
+		<li> <a href="course.html">Course Information</a> </li>
+		<li> <a href="tee.html">Green fees</a> </li>
+		<li> <a href="events.html">Events</a> </li>
+		<li> <a class="active"  href="member.html">Membership</a> </li>
+		<li> <a href="reservation.html">Reservation</a> </li>
+	</ul>
+</nav>
+
+<main>
+	<div class="memberLanding">
+		<div id="wrapper"> 
+			&nbsp;<h2>Membership</h2>
+		</div>
+	</div>
+
+	<h2>Sign Up For Membership</h2>
+	<h3>Only $40 a month!</h3>
+	<div class= "twoThings">
+		<div class="barLeft">
+			<div class="img"> <img src = "images/measureGreen.jpg" style="height:500px;" alt = "course"></img> </div>
+		</div>
+		<div class="barRight" style="margin-top: 40px;">
+			<div class="contactForm">  
+				<form id="form" action="#" method="post">
+					<fieldset> <input placeholder="Name" type="text" required="required"> </fieldset>
+					<fieldset> <input placeholder="Email Address" type="email" required="required"> </fieldset>
+					<fieldset> <input placeholder="Phone Number" type="tel" maxlength="12" required="required">	</fieldset>
+					<fieldset>
+					  <input placeholder="Address" type="text" required="required">
+					</fieldset>
+					<fieldset>
+					  <input placeholder="City" type="text" required="required">
+					</fieldset>
+					<fieldset>
+					  <input placeholder="State" type="text" required="required">
+					</fieldset>
+					<fieldset>
+					  <input placeholder="Zip" type="text" maxlength="5" required="required">
+					</fieldset>
+					<button type="submit">Continue to Payment</button>
+				</form>
+			</div>
+			<p id="log" style="color:#FFF"></p>
+		</div>
+	</div>
+	
+	<div class="benefits">
+		<h3>Receive our monthly newletter with exclusive offers!</h3>
+		<h3>Vouchers for range buckets!</h3>
+		<h3>Save 10% on items from our Pro Shop!</h3>
+		<h3>Guaranteed Lowest Rates (excludes hot deals)</h3>
+		<h3>Extra Savings on Lessons</h3>
+		<h3>Guaranteed Lowest Rates (excludes hot deals)</h3>
+		<h3>Chance at Free 9 hole round of golf</h3>
+		<h3>5% Discount on all Beverages & Food</h3>
+	</div>
+
+	<footer>
+		<div class="footerRight">
+			<div class="footerLeft">
+				<p>Pro Shop Hours:</p>
+				</p>Monday - Thursday: 6AM - 6PM<br>
+				Friday: 6AM - 7PM <br>
+				Saturday: 6AM - 8PM <br>
+				Sunday & Holidays: 6AM - 7PM <br> </p>
+			</div>
+			<div class="footerLeft" style="	text-align: right;">
+				<p>Denson Golf Course <br>
+				125 Hwy 13 S <br>
+				Troy, SC 27371 <br>
+				(910) 555-1487 <br>
+				<a href="mailto: kasanfor@asu.edu">denson@golf.com</a>
+			</div>
+		</div>
+	</footer>
+</main>
+
+<script>
+	function logSubmit(event) {
+	  log.textContent = `Form Submitted!`;
+	  event.preventDefault();
+	}
+
+	const form = document.getElementById('form');
+	const log = document.getElementById('log');
+	form.addEventListener('submit', logSubmit);
+</script>
+		
+</body>
+
+</html>
